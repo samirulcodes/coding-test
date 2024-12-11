@@ -1,3 +1,5 @@
+# 55. Write a Python program to check if a string is a valid hexadecimal number.
+
 # Get input from the user
 str = input("Enter a string: ").strip()  # Remove extra spaces
 
@@ -25,3 +27,15 @@ if is_valid:
     print("It's a valid hexadecimal number.")
 else:
     print("It's NOT a valid hexadecimal number.")
+
+
+
+# Input: 0x1A3F
+# Output: It's a valid hexadecimal numbe
+
+# Input: XYZ123
+# Output: It's NOT a valid hexadecimal number.
+
+
+# Input: 1234
+# Output: It's a valid hexadecimal number.
