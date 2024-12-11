@@ -1,9 +1,10 @@
 # 55. Write a Python program to check if a string is a valid hexadecimal number.
 
 # Get input from the user
-str = input("Enter a string: ").strip()  # Remove extra spaces
+str = input("Enter a string : ")
 
 # Remove '0x' or '0X' so that it start from index 2 
+# in programming, hexadecimal numbers are commonly written with a 0x or 0X
 if str.startswith("0x") or str.startswith("0X"):
     str = str[2:]
 
@@ -14,7 +15,7 @@ is_valid = True
 if len(str) > 0:
     # Loop through each character in the string
     for char in str:
-        # If character is not a valid hexadecimal character, set is_valid to False
+        # If character is not a valid hexadecimal , then set is_valid to False
         if char not in "0123456789abcdefABCDEF":
             is_valid = False
             break
@@ -24,9 +25,9 @@ else:
 
 # Print the result
 if is_valid:
-    print("It's a valid hexadecimal number.")
+    print("It is a valid hexadecimal number.")
 else:
-    print("It's NOT a valid hexadecimal number.")
+    print("It is not a valid hexadecimal number.")
 
 
 
